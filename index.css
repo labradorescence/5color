@@ -1,0 +1,107 @@
+/* Color and size */
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+div.card {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: left;
+    /* The width of the container also implies margin around the images. */
+    width: 501px;
+}
+
+.img1 {
+    width: 501px;
+    height: 501px;
+    background-color: #8995FF;
+}
+
+.img2 {
+    width: 501px;
+    height: 501px;
+    background-color: #89E3FF;
+}
+
+.img3 {
+    width: 501px;
+    height: 501px;
+    background-color: #89FFB8;
+}
+
+
+.img4 {
+    width: 501px;
+    height: 501px;
+    background-color: #E0FF89;
+}
+
+
+.img5 {
+    width: 501px;
+    height: 501px;
+    background-color: #FFB489;
+}
+
+.caption1 {
+    height: 28px;
+}
+
+.caption2 {
+    height: 28px;
+    color: grey;
+}
+
+
+/* Horizontal scroll */
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: white;
+}
+
+/* buttons */
+.arrow {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 325px;
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.next {
+    right: 20px;
+}
+
+.previous {
+    left: 20px;
+}
+
+h2 {
+    font-family: Arial-BoldMT;
+}
+
+h3 {
+    font-family: ArialMT;
+    font-size: 18px;
+}
+p {
+    font-family: ArialMT;
+    font-size: 18px;
+}

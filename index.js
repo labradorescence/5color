@@ -10,7 +10,7 @@ const max_scroll = wrapper.scrollWidth;
 function test(event) {
   let operand = 500;
 
-  //hide the arrow button
+  //hide the arrow button when not in use
   if( scrollMovePoint >= 
     (max_scroll-550)){
    next_btn.style.visibility = "hidden";

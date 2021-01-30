@@ -2,7 +2,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    margin-left: 200px; 
 }
 
 header {
@@ -164,6 +163,10 @@ p {
     max-width: 70vw;
     height: 90vw;  
      
+    }
+
+    .arrow {
+        top: 38%;
     }
 }
 

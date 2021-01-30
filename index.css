@@ -1,15 +1,26 @@
-.body {
+body {
     width: 100%;
     height: 100%;
     background-color: white;
+    margin-left: 200px; 
+}
+
+header {
+
+    position: fixed;
+    top:50px;
+    height:50px;
+    width:100%;
 }
 
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* just make scrollbar invisible */
+
 }
 
 div.card {
+    margin-top: 100px;
     /* To correctly align image, regardless of content height: */
     vertical-align: top;
     display: inline-block;
@@ -17,14 +28,17 @@ div.card {
     text-align: left;
     /* The width of the container also implies margin around the images. */
     width: 501px;
+
 }
 
 img.img1 {
     background-color: #8995FF;
+
 }
 
 img.img2 {
     background-color: #89E3FF;
+
 }
 
 img.img3 {
@@ -36,18 +50,8 @@ img.img4 {
     background-color: #E0FF89;
 }
 
-
 img.img5 {
     background-color: #FFB489;
-}
-
-.caption1 {
-    height: 28px;
-}
-
-.caption2 {
-    height: 28px;
-    color: grey;
 }
 
 /* Horizontal scroll */
@@ -56,6 +60,7 @@ img.img5 {
     overflow-y: hidden;
     white-space: nowrap;
     background-color: white;
+
 }
 
 /* buttons */
@@ -63,7 +68,6 @@ img.img5 {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    top: 325px;
     background-color: #fff;
     color: black;
     position: absolute;
@@ -74,34 +78,63 @@ img.img5 {
 }
 
 .next {
-    right: 20px;
+    top: 45%;
+    right: 3%;
 }
 
 .previous {
-    left: 20px;
+    top: 45%;
+    left: 3%;
 }
 
-h2 {
-    font-family: Arial-BoldMT;
+/* .header2{
+    text-align: left;
+    display: inline-block;
 }
+
+.header5{
+    display: inline-block;
+    text-align: right;
+} */
+
+.header2 {
+    font-family: Arial-BoldMT;
+    text-align: left;
+    color: black;
+    float: left;
+  }
+  
+  .header5 {
+    font-family: ArialMT;
+    text-align: left;
+    float: right;
+    color:black;
+    width: 80px;
+  }
+
 
 h3 {
     font-family: ArialMT;
     font-size: 18px;
+    margin:0;
 }
+
 p {
     font-family: ArialMT;
     font-size: 18px;
+    margin:0;
 }
 
-/* For 700px */
-/* @media screen and (max-width: 700px)
+.caption1 {
+    height: fit-content;
+    width: fit-content;
+}
 
-   
-    .img1 {
-      flex: 50%;
-      max-width: 50%;
-    } */
+.caption2 {
+    height: fit-content;
+    width: fit-content;
+    color: grey;
+}
 
 
 .card {
@@ -110,20 +143,28 @@ p {
     max-width: 100%;
     max-height: 20%;
     padding: 0 4px;
-    }
+}
 
 .card img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    }
+}
 
+/* For 700px */
 @media (max-width: 700px) {
-        .card {
-        position: relative;
-          max-width: 70vw;
-          height: 70vw;        
-        }
+    img {
+    position: relative;
+    max-width: 70vw;
+    height: 70vw;  
+    
+    }
+    .card {
+    position: relative;
+    max-width: 70vw;
+    height: 90vw;  
+     
+    }
 }
 
 
